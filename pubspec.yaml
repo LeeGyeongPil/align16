@@ -1,0 +1,27 @@
+name: align16
+description: >-
+  Checks APK, AAB and .so files for Android 16 KB page-size alignment by
+  parsing ELF and ZIP headers directly, and traces failing libraries back to
+  the pub package (and dependency path) that brought them in.
+version: 0.1.0
+repository: https://github.com/LeeGyeongPil/align16
+issue_tracker: https://github.com/LeeGyeongPil/align16/issues
+topics:
+  - flutter
+  - android
+  - cli
+  - elf
+
+environment:
+  sdk: ^3.5.0
+
+executables:
+  align16:
+
+dependencies:
+  args: 2.7.0
+  yaml: 3.1.4
+
+dev_dependencies:
+  archive: 4.6.0
+  test: 1.31.0
